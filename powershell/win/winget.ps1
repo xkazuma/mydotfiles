@@ -1,14 +1,19 @@
 #Requires -RunAsAdministrator
 
+# Git
+winget install Git.Git
+winget install GnuPG.GnuPG --source winget --accept-package-agreements --accept-source-agreements
+
 # tools for Windows
 winget install chocolatey
-winget install 7zip
 winget install --id Microsoft.Powershell --source winget
 winget install --accept-package-agreements 7z
 winget install --id Starship.Starship
 
 # for development tools
+winget install Microsoft.DevHome
 winget install vscode
+winget install wez.wezterm
 winget install --id Microsoft.VisualStudio.2022.Community
 winget install --id Microsoft.VisualStudio.2022.BuildTools
 winget install --id MSYS2.MSYS2
@@ -29,17 +34,20 @@ winget install neovim --source winget
 winget install okular --source winget
 
 # for Docker
-winget install 'Docker Desktop'
-winget install docker
+winget install Docker.DockerDesktop
+winget install RedHat.Podman
 winget install lazydocker --id JesseDuffield.Lazydocker
 
 # for Rust tools
 winget install rust --id Rustlang.Rust.MSVC
 
+# for Documentation
+winget install Notion.Notion
+
 # for Communication tools
-winget install discord
-winget install slack
+winget install Discord.Discord
+winget install SlackTechnologies.Slack
 
 # for Windows health
-winget install crystaldiskinfo
-winget install coretemp
+winget install CrystalDewWorld.CrystalDiskInfo
+winget install ALCPU.CoreTemp

@@ -1,1 +1,1 @@
-choco install tree-sitter --yes
+choco install tree-sitter --yes --use-system-powershell
